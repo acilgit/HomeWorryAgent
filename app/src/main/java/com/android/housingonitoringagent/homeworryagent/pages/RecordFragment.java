@@ -17,11 +17,13 @@ import com.alibaba.fastjson.JSON;
 import com.android.housingonitoringagent.homeworryagent.Const;
 import com.android.housingonitoringagent.homeworryagent.R;
 import com.android.housingonitoringagent.homeworryagent.User;
+import com.android.housingonitoringagent.homeworryagent.beans.ShowHouseBean;
 import com.android.housingonitoringagent.homeworryagent.extents.BaseActivity;
 import com.android.housingonitoringagent.homeworryagent.utils.net.VolleyResponseListener;
 import com.android.housingonitoringagent.homeworryagent.utils.net.VolleyStringRequest;
 import com.android.housingonitoringagent.homeworryagent.utils.uikit.BGARefreshLayoutBuilder;
 import com.android.housingonitoringagent.homeworryagent.utils.uikit.QBLToast;
+import com.android.housingonitoringagent.homeworryagent.views.XAdapter;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -44,13 +46,10 @@ public class RecordFragment extends Fragment {
     Toolbar toolbar;
     @Bind(R.id.rvMain)
     RecyclerView rvMain;
-    @Bind(R.id.refresh_view)
+    @Bind(R.id.refreshView)
     BGARefreshLayout refreshView;
 
-    private RecyclerView lvRecent;
-    private SwipeRefreshLayout swiper;
-
-    private XAdapter<NeighbourListBean.NeighbourMessagesBean.ContentBean> neighborAdapter;
+    private XAdapter<ShowHouseBean.ContentBean> neighborAdapter;
     //    private XAdapter<String> neighborAdapter;
 //    private XAdapter neighborAdapter;
     private boolean lastPage;
@@ -58,7 +57,6 @@ public class RecordFragment extends Fragment {
     private int selectedVillageIndex = -1;
     private List<String> villages;
 
-    private InputContentWindow inputContentWindow;
     private static final int REQUEST_CODE_NEW_COMMENT = 0;
 
     public RecordFragment() {
@@ -73,49 +71,22 @@ public class RecordFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View currentView = inflater.inflate(R.layout.fragment_me, container, false);
         ButterKnife.bind(this, currentView);
-        swiper = (SwipeRefreshLayout) currentView.findViewById(R.id.srlRecent);
-        lvRecent = (RecyclerView) currentView.findViewById(R.id.lvRecent);
         return currentView;
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        lvRecent = null;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        swiper.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                refreshList();
-                swiper.setRefreshing(false);
-            }
-        });
-        lvRecent.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        lvRecent.setItemAnimator(new DefaultItemAnimator());
-        if (savedInstanceState == null) {
-        } else {
-        }
-        init();
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSwipeBackEnable(false);
-        setContentView(R.layout.activity_home_neighbor);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initViews();
         initDate();
     }
@@ -335,15 +306,7 @@ public class RecordFragment extends Fragment {
 //        ivBack.setOnClickListener(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.home_neighbour, menu);
-        return true;
-    }
-
     private void initDate() {
-        pageIndex = -1;
-
         try {
             NeighbourListBean bean = JSON.parseObject(User.getNeighbours().toString(), NeighbourListBean.class);
             lastPage = bean.getNeighbourMessages().isLastPage();
