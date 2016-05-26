@@ -113,8 +113,8 @@ public class User {
 
     // 涉及到清除缓存等IO操作，建议在子线程里调用
     public static void logOut() {
-        App.self.clearAppCache();
-        App.self.clearAppData();
+        App.getInstance().clearAppCache();
+        App.getInstance().clearAppData();
 
     }
 

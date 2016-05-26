@@ -100,8 +100,8 @@ public class LoginActivity extends BaseActivity {
             case R.id.btnLogin:
                 requestLogin();
                 break;
-            case R.id.agreement_tv:
-                break;
+//            case R.id.agreement_tv:
+//                break;
             case R.id.tvRetrieve:
 //                ForgetPasswordActivity.start(this);
                 break;
