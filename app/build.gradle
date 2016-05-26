@@ -24,4 +24,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.facebook.fresco:fresco:0.8.1'
+    compile 'com.mcxiaoke.volley:library:+'
+    compile 'com.alibaba:fastjson:1.2.7'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.0.7@aar'
 }

@@ -1,5 +1,340 @@
 <resources>
-    <string name="app_name">HomeWorryAgent</string>
+    <string name="app_name">置家无忧</string>
+    <string name="loading">loading...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <!-- 主页-->
+    <string name="home">家园</string>
+    <string name="property">置业</string>
+    <string name="find">发现</string>
+    <string name="carefree">无忧</string>
+    <string name="personal_center">我的</string>
+    <string name="homepage">首页</string>
+    <string name="project_manager">项目经理人</string>
+    <!-- 家园-->
+    <string name="binding_property"><u>立即绑定</u></string>
+    <string name="problem">问题</string>
+    <string name="pay">缴费</string>
+    <string name="vote">投票</string>
+    <string name="maintenance_fund">专项维修基金</string>
+    <string name="public_facilities">公共设施</string>
+    <string name="neighbor">邻居</string>
+    <string name="complaint">投诉</string>
+    <string name="convenient_stores">便利店</string>
+    <string name="text_name">名称</string>
+    <string name="text_unit">单位</string>
+    <string name="text_number">数量</string>
+    <string name="text_question">问题</string>
+    <string name="quarters_conmplain">小区投诉</string>
+    <string name="knowledgebase">知识库</string>
+    <string name="quarters_announcement">小区公告</string>
+    <string name="info_announcement">公告详情</string>
+    <string name="estate_comment">小区评价</string>
+    <string name="text_handle_result">处理结果</string>
+    <string name="text_satisfy">满意</string>
+    <string name="text_dissatisfy">不满意</string>
+    <string name="text_vote_target">可投票对象:</string>
+    <string name="text_need">需要</string>
+    <string name="text_owner_agree">个业主同业</string>
+    <string name="text_need_area">平方建筑面积</string>
+    <string name="text_launch">发起</string>
+    <string name="text_agree">同意</string>
+    <string name="text_disagree">不同意</string>
+    <string name="text_commonly">一般</string>
+    <string name="text_waiver">弃权</string>
+    <string name="text_query">查询</string>
+    <string name="text_cozy_prompt">温馨提示:您有一套物业需要绑定。</string>
+    <string name="text_entrust">委托</string>
+    <string name="text_one_key_entrust">一键委托</string>
+    <string name="text_owner_name">户主名称:</string>
+    <string name="text_village">所在小区:</string>
+    <string name="text_property_services_unit">物业服务单位:</string>
+    <string name="text_built_up_area">建筑面积:</string>
+    <string name="text_property_address">物业地址:</string>
+    <string name="text_phone_no">手机号码:</string>
+    <string name="text_get_code">获取验证码</string>
+    <string name="text_verification_code">验证码:</string>
+    <string name="text_add_binding_tip">提示:将按您物业登记时间先后顺序添加</string>
+    <string name="text_personal_information">个人信息</string>
+    <string name="text_edit_property_information">填写物业信息</string>
+    <string name="text_price">售价</string>
+    <string name="text_yuan">元</string>
+    <string name="text_floor">楼层</string>
+    <string name="text_direction">楼向</string>
+    <string name="text_built_year">建筑年份</string>
+    <string name="text_deposit">押金</string>
+    <string name="text_describe">描述</string>
+    <string name="text_chose_label">选择标签</string>
+    <string name="upload_property_photo">上传物业照片</string>
+    <string name="text_commit">提交</string>
+    <string name="text_hint_title">标题*</string>
+    <string name="text_hint_detail">请输入详细信息</string>
+    <string name="text_hint_upload_video_tip">请选择您要上传的视频或音频请选择您要上传的视频或音频</string>
+    <string name="text_chose_upload">选择上传</string>
+    <string name="text_uploaded">已经上传</string>
+    <string name="text_cancel_upload">取消上传</string>
+    <string name="text_dosage">本期用量:</string>
+    <string name="text_pay_for">本期应缴:</string>
+    <string name="text_pay_for_now">立即缴费</string>
+    <string name="text_commit_time">提交时间:</string>
+    <string name="text_give_up">放弃</string>
+    <string name="text_delete">删除</string>
+    <string name="text_colon">:</string>
+    <string name="text_no_village_tip">您没有相应的小区</string>
+    <string name="text_no_data">没有更多数据</string>
+    <string name="text_company_name">公司名称:</string>
+    <string name="text_phone">联系电话:</string>
+    <string name="text_contacts">联系人:</string>
+    <string name="text_online_deal">在线交易单数:</string>
+    <string name="text_band_saw">带看次数:</string>
+    <string name="text_address">地址:</string>
+    <string name="text_property_name">业主姓名:</string>
+    <string name="text_rent">租金</string>
+    <string name="text_orientation">朝向</string>
+    <!-- 侧滑菜单-->
+    <string name="personal_data">个人资料</string>
+    <string name="my_order">我的订单</string>
+    <string name="real_estate_appraisal">房产评估</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="security_center">安全中心</string>
+    <string name="system_settings">系统设置</string>
+    <string name="capital_administration">资金管理</string>
+    <string name="village">小区</string>
+    <string name="village_vote">小区投票</string>
+    <string name="info_vote">投票详情</string>
+    <string name="user_agreement">用户协议</string>
+    <!--置业-->
+    <string name="text_bus">公交</string>
+    <string name="text_metro">地铁</string>
+    <string name="text_education">教育</string>
+    <string name="text_bank">银行</string>
+    <string name="text_hospital">医院</string>
+    <string name="text_casual">休闲</string>
+    <string name="text_location_fail">定位失败</string>
+    <string name="text_poi_no_result">未找到结果</string>
+    <string name="surrounding_facilities">周边设施</string>
+    <string name="new_house">新房</string>
+    <string name="secondary_housing">二手房</string>
+    <string name="rental">租房</string>
+    <string name="knowledge_base">知识库</string>
+    <string name="purchase_notes">购房须知</string>
+    <string name="text_price_1">价格</string>
+    <string name="text_area">面积</string>
+    <string name="text_apartment">户型</string>
+
+    <!--提示-->
+    <string name="press_one_more_time_to_exit">再按一次退出</string>
+    <string name="text_customize">自定义</string>
+    <string name="text_max">最大</string>
+    <string name="text_min">最小</string>
+    <string name="comment_input_hint">我也来两句</string>
+    <string name="send">发送</string>
+    <string name="text_hint_account">请输入用户名</string>
+    <string name="text_hint_password">请输入密码</string>
+    <string name="text_login">登录</string>
+    <string name="text_register">注册</string>
+    <string name="text_forget_password">忘记密码?</string>
+    <string name="text_hint_edit_phone">请输入手机号码</string>
+    <string name="text_hint_edit_code">请输入验证码</string>
+    <string name="text_hint_edit_new_password">请输入密码(6位数以上)</string>
+    <string name="text_hint_edit_confirm_password">再次输入密码</string>
+    <string name="text_send_code">发送验证码</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_register_soon">立即注册</string>
+    <string name="text_agree_protocol">注册即表示同意置家无忧房产网相关</string>
+    <string name="text_app_protocol">《置家无忧用户协议》</string>
+    <string name="please_input_vaild_phone">请输入一个有效的手机号码</string>
+    <string name="article_comment_format_hint">"评论不能为空,也不能超过255个字符"</string>
+    <!--manifest label-->
+    <string name="label_add_binding">添加绑定</string>
+    <string name="label_forget_password">忘记密码</string>
+    <string name="label_commit_complaint">提交投诉</string>
+    <string name="label_commit_question">提交问题</string>
+    <string name="label_complaint">投诉</string>
+    <string name="label_complaint_detail">投诉详情</string>
+    <string name="label_neighbor">邻居</string>
+    <string name="label_payment">缴费</string>
+    <string name="label_entrust_intermediary">委托中介</string>
+    <string name="label_question_detail">问题详情</string>
+    <string name="label_vote">投票</string>
+    <string name="label_vote_detail">投票详情</string>
+    <string name="label_register_info">登记信息</string>
+    <string name="label_login">登录</string>
+    <string name="label_launch_vote">发起投票</string>
+    <string name="label_maintenance_fund">专项维修基金</string>
+    <string name="label_treatment_opinion">处理意见</string>
+    <string name="label_property_detail">物业详情</string>
+    <string name="label_register">注册</string>
+    <string name="label_public_providing">公共设施</string>
+    <string name="label_about_us">关于我们</string>
+    <string name="label_notifies">通知</string>
+    <string name="label_house_evaluate">置业房评</string>
+    <string name="label_guide_record">带看记录</string>
+    <string name="label_deal_record">成交记录</string>
+    <string name="label_intermediary">委托中介</string>
+    <string name="vote_dialog_tips">为了保证公正性，我们将发送验证码到您绑定的手机!</string>
+    <string name="text_cancel">取消</string>
+    <array name="complaint_handle_states">
+        <item>未处理</item>
+        <item>处理中</item>
+        <item>已处理</item>
+        <item>已完成</item>
+    </array>
+
+
+    <string name="payment">支付订单</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat">微信</string>
+    <!-- “支付”页 -->
+    <string name="select_pay_way">选择支付方式</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="ali_pay">支付宝钱包支付</string>
+    <string name="pay_failure">支付失败</string>
+    <string name="pay_successful">支付成功</string>
+    <string name="pay_cancel">取消支付</string>
+    <string name="not_install_wechat">尚未安装微信</string>
+    <!--账号管理模块字符资源-->
+    <array name="order_classify">
+        <item>"按分类"</item>
+        <item>"水费"</item>
+        <item>"电费"</item>
+        <item>"煤气费"</item>
+        <item>"天然气"</item>
+        <item>"有线电话"</item>
+        <item>"固话宽带"</item>
+        <item>"租金"</item>
+    </array>
+    <string name="send_identify_code">发送验证码</string>
+    <string name="send_identify_code_tips">（我们将发送验证码到你绑定的手机）</string>
+    <string name="input_identify_code">输入验证码</string>
+    <string name="input_old_password">输入旧密码</string>
+    <string name="input_new_phone">输入新手机号</string>
+    <string name="confirm">确定</string>
+    <string name="change_by_phone">手机更换</string>
+    <string name="change_by_old">旧密码更换</string>
+    <string name="input_new_password">输入新密码</string>
+    <string name="input_again">再次输入</string>
+    <string name="exit_login">退出登录</string>
+    <string name="name">姓名</string>
+    <string name="nick_name">昵称</string>
+    <string name="phone_number">手机</string>
+    <string name="id_card_number">身份证号码</string>
+    <string name="birthday">生日</string>
+    <string name="gender">性别</string>
+    <string name="about_us">\u3000\u3000真实海量的房源数据，为用户提供有真实价值的参考信息。有绝对优势的市场新房价格为找房完全公开的服务费用明细，让找房用户熟知每笔费用情况，众多生活服务信息，并为找房用户提供合作商家的优惠服务。阳光透明的交易流程，让找房用户随时知晓交易进度。</string>
+    <string name="about_us_title">关于我们</string>
+    <string name="contacts_us">官方网站：www.zhijia.com\n客服电话：400-188-188</string>
+    <string name="version_code">版本号：</string>
+
+
+    <!--通知相关-->
+    <string name="all_notifies">全部</string>
+    <string name="have_read_notifies">已读</string>
+    <string name="unread_notifies">未读</string>
+    <!--二手房评价-->
+    <string name="house_evaluate_title">置业房评</string>
+    <!--带看记录-->
+    <string name="guide_to_see_record">带看记录</string>
+    <string name="guide_to_see_person">带看人员</string>
+    <string name="guide_to_see_time">带看时间</string>
+    <string name="guide_to_see_times">带看次数</string>
+    <string name="guide_to_see_phone">咨询电话</string>
+    <!--成交记录-->
+    <string name="deal_info">房源信息</string>
+    <string name="deal_person">经纪人</string>
+    <string name="deal_record">成交记录</string>
+    <array name="blocks">
+        <item>"不限"</item>
+        <item>"东城"</item>
+        <item>"南城"</item>
+        <item>"莞城"</item>
+        <item>"万江"</item>
+    </array>
+    <string name="block">区域</string>
+    <string name="no_limit">不限</string>
+    <string name="choose">选择</string>
+    <string name="begin_sale_time">开盘时间</string>
+    <array name="open_times">
+        <item>"不限"</item>
+        <item>"本月开盘"</item>
+        <item>"下月开盘"</item>
+        <item>"三个月内"</item>
+        <item>"六个月内"</item>
+    </array>
+    
+    <array name="deposit_mode">
+        <item>-请选择-</item>
+        <item>押一付一</item>
+        <item>押二付一</item>
+        <item>押三付一</item>
+        <item>押一付二</item>
+        <item>押一付三</item>
+        <item>年付</item>
+        <item>面议</item>
+    </array>
+
+    <array name="orientation">
+        <item>-请选择-</item>
+        <item>朝东</item>
+        <item>朝南</item>
+        <item>朝西</item>
+        <item>朝北</item>
+        <item>东南</item>
+        <item>西南</item>
+        <item>西北</item>
+        <item>东北</item>
+    </array>
+
+    <string name="register_di_digits">0123456789xX</string>
+    <string name="register_phone_digits">0123456789</string>
+
+    <!-- 等待提示 -->
+    <string name="wait_a_few_times">请稍候</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="submitting">正在提交</string>
+    <string name="verification_code_send">验证码已发送，请注意查收</string>
+    <!-- 错误提示 -->
+    <string name="network_exception">网络不给力</string>
+    <string name="get_verification_code_failure">无法请求验证码，请稍后重试</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="password_too_short">密码太短了</string>
+    <string name="password_too_long">密码太长了</string>
+    <string name="password_not_allow">密码含有非法字符</string>
+    <string name="password_not_match">密码不一致</string>
+    <string name="please_confirm_password">请确认密码</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="signing_in">正在登录</string>
+    <string name="sign_in_success">登录成功</string>
+
+
+
+    <string name="second">秒</string>
+
+
+    <!-- 微信SDK -->
+    <string name="wx_app_id">wx9e9a27fe1127d0f2</string>
+    <string name="wx_partner_id">1321572601</string>
+    
+    <string name="residence">住宅</string>
+    <string name="villa">别墅</string>
+    <string name="office_building">写字楼</string>
+    <string name="shops">商铺</string>
+    <string name="workshop">厂房</string>
+
+
+    <string name="date_format">yyyy年MM月dd日</string>
+    <string name="date_simple">yyyy-MM-dd HH:mm:ss</string>
+
+
+
+        <item type="id" name="entity"></item>
+
+    <string name="share_logo">http://192.168.1.233:9000/resources/_backend/images/zhijiawuyou.png</string>
 </resources>
+
+
+

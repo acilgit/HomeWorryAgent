@@ -43,11 +43,6 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration useDefault="false">D:\Program Files\TortoiseSVN</configuration>
-    <option name="sshConnectionType" value="PASSWORD" />
-    <option name="sshUserName" value="fangtingxiu" />
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
